@@ -24,6 +24,7 @@ namespace ADOvFrame
                 WriteLine($"Your connection object is a:{connection.GetType().Name}");
                 connection.ConnectionString = connectionString;
                 connection.Open();
+                // Какие нибудь изменения в коде...
                 // Создать объект команды
                 DbCommand command = factory.CreateCommand();
                 if (command == null)
